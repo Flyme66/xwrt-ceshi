@@ -16,7 +16,7 @@ ln -s /usr/bin/upx-ucl ./staging_dir/host/bin/upx-ucl
 
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.50.1/g' package/base-files/files/bin/config_generate
+#sed -i 's/192.168.1.1/192.168.50.1/g' package/base-files/files/bin/config_generate
 
 # 删除原来的argon
 #rm -rf  package/lean/luci-theme-argon
@@ -32,9 +32,9 @@ sed -i 's/192.168.1.1/192.168.50.1/g' package/base-files/files/bin/config_genera
 #ZZZ="package/emortal/default-settings/files/zzz-default-settings"
 #sed -i '/CYXluq4wUazHjmCDBCqXF/d' $ZZZ
 
-sed -i 's/set wireless.default_radio${devidx}.ssid=OpenWrt/set wireless.default_radio0.ssid=Phicomm-k2p_5G/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+#sed -i 's/set wireless.default_radio${devidx}.ssid=OpenWrt/set wireless.default_radio0.ssid=Phicomm-k2p_5G/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
-sed -i '/set wireless.default_radio0.ssid=Phicomm-k2p_5G/a\ set wireless.default_radio1.ssid=Phicomm-k2p' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+#sed -i '/set wireless.default_radio0.ssid=Phicomm-k2p_5G/a\ set wireless.default_radio1.ssid=Phicomm-k2p' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 #cd feeds/NueXini_Packages
-curl -s https://raw.githubusercontent.com/NueXini/BuildOpenWrt/master/sh/language_fix.sh | sudo bash
+#curl -s https://raw.githubusercontent.com/NueXini/BuildOpenWrt/master/sh/language_fix.sh | sudo bash
