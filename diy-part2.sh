@@ -38,4 +38,4 @@ ln -s /usr/bin/upx-ucl ./staging_dir/host/bin/upx-ucl
 
 #cd feeds/NueXini_Packages
 #curl -s https://raw.githubusercontent.com/NueXini/BuildOpenWrt/master/sh/language_fix.sh | sudo bash
-rm feeds/x/luci-app-natcap/files/luci/model/cbi/natcap/natcapd_vpn.lua
+#rm feeds/x/luci-app-natcap/files/luci/model/cbi/natcap/natcapd_vpn.lua
