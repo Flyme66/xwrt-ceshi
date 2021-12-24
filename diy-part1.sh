@@ -20,3 +20,4 @@
 #echo 'src-git clone https://github.com/wiwizcom/WiFiPortal.git' >>feeds.conf.default
 sed -i '$a src-git NueXini_Packages https://github.com/NueXini/NueXini_Packages.git' feeds.conf.default
 sed -i '$a src-git WiFiPortal https://github.com/wiwizcom/WiFiPortal.git' feeds.conf.default
+sed -i '$a src-git mt_wifi https://github.com/Flyme66/mt_wifi.git' feeds.conf.default
